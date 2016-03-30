@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Procrastinator</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id="jumbotron">
+      <article id="welcome">
+        <h1>What would you like to get done, eventually?</h1>
+        <p>Welcome to <span id="form-title">Procrastinator</span>, a form for those who believe "there's always tomorrow."</p>
+      </article>
+    </div>
+    
+    <main class="container"> 
+      <div id="all-forms">
+        <section class="single-form">
+          <h2>Project Tasks</h2>
+          <div class="myList"></div>
+        </section>
+        
+        <section class="single-form">
+          <h2>My Todos</h2>
+          <div class="myList"></div>
+        </section>
+
+        <section class="single-form">
+          <h2>Things to Put Off</h2>
+          <div class="myList"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      - eventually made with <span id="heart">&#10084;</span> by <a href="https://about.me/eunicedo">eunice do</a> -
+    </footer>
+    
+    <script src="js/Procrastinator.js"></script>
+    <script>
+      createForm('.myList', 'http://httpbin.org/post');
+    </script>
+  </body>
+</html>
